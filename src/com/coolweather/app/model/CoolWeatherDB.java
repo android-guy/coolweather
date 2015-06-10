@@ -32,7 +32,7 @@ public class CoolWeatherDB {
 	 * »ñÈ¡CoolWeatherDBÊµÀý
 	 */
 	public synchronized static CoolWeatherDB getInstance(Context context){
-		if(coolWeatherDB != null){
+		if(coolWeatherDB == null){
 			coolWeatherDB = new CoolWeatherDB(context);
 		}
 		return coolWeatherDB;
